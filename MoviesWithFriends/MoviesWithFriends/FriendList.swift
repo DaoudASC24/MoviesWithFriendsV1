@@ -26,26 +26,43 @@ struct FriendList: View {
                 ForEach(friends) { friend in
                     
                     NavigationLink(friend.name){
-                        Text("Detail for \(friend.name)")
-                            .navigationTitle("Friend Details")
-                            .navigationBarTitleDisplayMode(.inline)
+                        FriendDetail(friend: friend)
+                           
                     }
                     
                 }
+                .onDelete(perform: deleteFriends(indexes: ))
                 
             }
             
             .navigationTitle("Friends")
+            .toolbar {
+                ToolbarItem{
+                    Button("Add Friend", systemImage: "plus", action: addFriend)
+                }
+                ToolbarItem(placement: .topBarTrailing){
+                    EditButton()
+                }
+            }
         } detail:{
             Text("Select A Friend:")
                 .navigationTitle("Friend")
+            
                 .navigationBarTitleDisplayMode(.inline)
         }
 
     }
+    private func addFriend(){
+        context.insert(Friend(name: "New Friend"))
+    }
+    
+    private func deleteFriends(indexes: IndexSet){
+        for index in indexes{
+            context.delete(friends[index])
+        }
+    }
 
 }
-
 
 
 #Preview {

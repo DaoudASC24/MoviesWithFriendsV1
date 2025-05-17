@@ -20,7 +20,7 @@ struct MoviesWithFriendsApp: App {
             ContentView()
 
         }
-
+        .modelContainer(for: [Movie.self, Friend.self])
     }
 
 }

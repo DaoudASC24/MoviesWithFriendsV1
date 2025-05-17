@@ -13,9 +13,19 @@ struct MovieList: View {
         NavigationSplitView {
             List {
                 ForEach(movies) { movie in
-                    NavigationLink(destination: Text("Detail for \(movie.title)")) {
-                        Text(movie.title)
+                    NavigationLink(movie.title) {
+                        MovieDetail(movie: movie)
                     }
+                }
+                .onDelete(perform: deleteMovies(indexes:))
+            }
+            .navigationTitle("Movies")
+            .toolbar{
+                ToolbarItem{
+                    Button("Add Movie", systemImage: "plus", action: addMovie)
+                }
+                ToolbarItem{
+                    EditButton()
                 }
             }
         } detail: {
@@ -24,9 +34,16 @@ struct MovieList: View {
                 .navigationBarTitleDisplayMode(.inline)
         }
     }
+    private func addMovie(){
+        context.insert(Movie(title: "New Movie", releaseDate: .now))
+    }
+        private func deleteMovies(indexes: IndexSet){
+                    
+        }
 }
 
 #Preview {
+    
     MovieList()
         .modelContainer(SampleData.shared.modelContainer)
 }

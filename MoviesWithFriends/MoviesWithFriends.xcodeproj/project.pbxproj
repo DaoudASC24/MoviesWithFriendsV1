@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A22A1BD2DD8E1C500F93928 /* FriendDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22A1BC2DD8E1C500F93928 /* FriendDetail.swift */; };
+		8A22A1BF2DD8E76B00F93928 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A22A1BE2DD8E76B00F93928 /* MovieDetail.swift */; };
 		8A85B3222DCFA48F00576331 /* MoviesWithFriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A85B3212DCFA48F00576331 /* MoviesWithFriendsApp.swift */; };
 		8A85B3242DCFA48F00576331 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A85B3232DCFA48F00576331 /* ContentView.swift */; };
 		8A85B3262DCFA49100576331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A85B3252DCFA49100576331 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A22A1BC2DD8E1C500F93928 /* FriendDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetail.swift; sourceTree = "<group>"; };
+		8A22A1BE2DD8E76B00F93928 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		8A85B31E2DCFA48F00576331 /* MoviesWithFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesWithFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A85B3212DCFA48F00576331 /* MoviesWithFriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesWithFriendsApp.swift; sourceTree = "<group>"; };
 		8A85B3232DCFA48F00576331 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				8A85B3332DCFA65E00576331 /* Movie.swift */,
 				8A85B3352DCFA85F00576331 /* SampleData.swift */,
 				8A85B3372DCFCDE700576331 /* MovieList.swift */,
+				8A22A1BC2DD8E1C500F93928 /* FriendDetail.swift */,
+				8A22A1BE2DD8E76B00F93928 /* MovieDetail.swift */,
 			);
 			path = MoviesWithFriends;
 			sourceTree = "<group>";
@@ -152,8 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A22A1BD2DD8E1C500F93928 /* FriendDetail.swift in Sources */,
 				8A85B3302DCFA5E100576331 /* Friend.swift in Sources */,
 				8A85B3362DCFA85F00576331 /* SampleData.swift in Sources */,
+				8A22A1BF2DD8E76B00F93928 /* MovieDetail.swift in Sources */,
 				8A85B3382DCFCDE700576331 /* MovieList.swift in Sources */,
 				8A85B3242DCFA48F00576331 /* ContentView.swift in Sources */,
 				8A85B3222DCFA48F00576331 /* MoviesWithFriendsApp.swift in Sources */,
